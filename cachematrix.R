@@ -1,11 +1,13 @@
-## This pair of functions enables caching and subsequent retrieval of a matrix's inverse value, in order to speed processing of
-## large datasets. The first function, makeCacheMatrix(), establishes four functions that get and set (retrieve and modify) data values
-## for the matrix x and its inverse i. This function also creates a list object of type makeCacheMatrix() in the parent environment that
-## stores a matrix and its inverse. The second function, cacheSolve(), uses the list object created by makeCacheMatrix() to retrieve the cached
-## matrix inverse or populate a new inverse.
+## This pair of functions enables caching and subsequent retrieval of a matrix's inverse value, in order to speed
+## processing of large datasets. The first function, makeCacheMatrix(), establishes four functions that get and 
+## set (retrieve and modify) data values for the matrix x and its inverse i. This function also creates a list
+## object of type makeCacheMatrix() in the parent environment that stores a matrix and its inverse. The second
+## function, cacheSolve(), uses the list object created by makeCacheMatrix() to retrieve the cached matrix inverse
+## or populate a new inverse.
 
-## This function establishes four functions that get and set (retrieve and modify) data values for the matrix x and its inverse i.
-## This function also creates an object of type makeCacheMatrix() in the parent environment that stores a matrix and its inverse.
+## This function establishes four functions that get and set (retrieve and modify) data values for the matrix x
+## and its inverse i. This function also creates an object of type makeCacheMatrix() in the parent environment 
+## that stores a matrix and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL                                       ## Initialize i with value NULL
@@ -22,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function uses the list object created by makeCacheMatrix() to retrieve the cached matrix inverse or populate a new inverse.
+## This function uses the list object created by makeCacheMatrix() to retrieve the cached matrix inverse or
+## populate a new inverse.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
